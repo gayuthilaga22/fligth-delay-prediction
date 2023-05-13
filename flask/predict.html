@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Predict</title>
+    <link rel="stylesheet">
+    <style>
+        body
+        {
+        background-image:url("https://assets.cntraveller.in/photos/62f5e4ee86695f53fae0ab75/3:2/w_5997,h_3998,c_limit/Airplanes%20flying_GettyImages-1372270538.jpg");
+        background-size: cover;
+        }
+        h3.big
+        {
+        line-height: 1.8;
+        }
+    </style>
+</head>
+<body>
+   
+        <h1><strong>Prediction of Flight Delay</strong></h1><br>
+        <h4>
+        <form action="/pred", method="POST">
+            <div class="form-group row">
+                <div class="col-md-3">
+                    <label for=" Fligth Number">Enter the Fligth Number</label>
+                    <input type="number" class="form-control" name=" Fligth Number" id=" Fligth Number"  placeholder=" Fligth Number" required="required"/>
+                </div>
+            </div>
+            
+            <div class="form-group row">
+                <div class="col-md-3">
+                    <label for="Month">Month</label>
+                    <input type="number" class="form-control" name="Month" id="Month" min="1" max="12" placeholder="Month" required="required"/>
+                </div>
+            </div>
+             <div class="form-group row">
+                <div class="col-md-3">
+                    <label for="Day of Week">Day of Week</label>
+                    <input type="number" class="form-control" name="Day of Week" id="Day of Week"  placeholder="Day of Week" required="required"/>
+                </div>
+            </div>
+                    <label for="origin">Origin</label>
+                 </div>
+                    <select class = "custom-select" id="origin" name="origin">
+                        <option value = "0">Air Asia</option>
+                        <option value = "1">Air India</option>
+                        <option value = "2">GoAir</option>
+                        <option value = "3">IndiGo</option>
+                        <option value = "4">Jet Airways</option>
+                        <option value = "5">Jet Airways Business</option>
+                        <option value = "6">Multiple carriers</option>
+                        <option value = "7">Multiple carriers Premium economy</option>
+                        <option value = "8">SpiceJet</option>
+                        <option value = "9">Tryjet</option>
+                        <option value = "10">Vistara</option>
+                        <option value = "11">Vistara Premium economy</option>
+                    </select>
+            </div>
+            <div class="form-group row">
+                <div class="col-md-3">
+                    <label for="Destination">Destination</label>
+                </div>
+                    <select class = "custom-select" id= "Destination" name="Destination">
+                        <option value = "0">Bangalore</option>
+                        <option value = "1">Cochin</option>
+                        <option value = "2">Delhi</option>
+                        <option value = "3">Kolkata</option>
+                        <option value = "4">Hyderabad</option>
+                        <option value = "5">New Delhi</option>
+                    </select>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-md-3">
+                    <label for="Dep_Time">Scheduled Drparture Time</label>
+                    <input type="number" class="form-control" name="Dep_Time" id="Dep_Time"" placeholder="Dep_Time" required="required"/>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-md-3">
+                    <label for="Arrival_Time">Scheduled Arrival Time</label>
+                    <input type="number" class="form-control" name="Arrival_Time" id="Arrival_Time"  placeholder="Arrival_Time" required="required"/>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-md-3">
+                    <label for="Actual Departure Time">Actual Departure Time</label>
+                    <input type="number" class="form-control" name="Actual Departure Time" id="Actual Departure Time"  placeholder="Actual Departure Time" required="required"/>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+            <button type="submit" class="btn btn-success btn-lg">Submit</button>
+
+
+
+        </form>
+        <br>
+        </h4>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
